@@ -320,6 +320,24 @@ ul{
     }
 /* the seprator space and its animation (START) */
 }
+.button-up {
+    position: sticky;
+    top: 94vh;
+    z-index: 20;
+    transition: 0.3s;
+}
+.button-up a{
+    margin-left: 10px;
+    padding: 4px 4px 0px;
+    background-color: rgb(255 255 255 / 22%);
+    border-radius: 10px;
+}
+
+
+.button-up a i{
+    color: var(--main-color);
+    font-size: 25px;
+}
 .Seprator{
     margin: 85px 0;
     text-align: center;
@@ -1676,5 +1694,159 @@ outline: none;
     }
     .discount .left p{
         padding: 0 15px;
+    }
+}
+.footer{
+    background-color: #191919;
+    color: white;
+    text-decoration: none;
+    padding-top: 30px;
+    
+}
+.footer .container .content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    gap: 25px;
+}
+
+.footer .container .content .contact{
+
+}
+.footer .container .content .contact h3{
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+
+.footer .container .content .contact .social-media{
+
+}
+.footer .container .content .contact .social-media a{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background-color: #313131;
+    color:#b9b9b9;
+    font-size: 22px;
+    margin-right: 7px;
+    transition: 0.3s;
+}
+.footer .container .content .contact .social-media i{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.footer .container .content .contact .social-media a.facebook:hover{
+    background-color: #1877f2;
+}
+.footer .container .content .contact .social-media a.twitter:hover{
+    background-color: #1da1f2;
+}
+.footer .container .content .contact .social-media a.youtube:hover{
+    background-color: #ff0000;
+}
+.footer .container .content .contact p {
+    color: #acacac;
+    line-height: 1.8;
+    
+    margin-top: 15px;
+}
+.footer .container .content .important-links ul li{
+    margin-bottom: 20px;
+    border-bottom: 1px solid #494949;
+    padding-bottom: 10px;
+    transition: 0.3s;
+}
+.footer .container .content .important-links ul a:hover{
+    padding-left: 10px;
+    color: white;
+}
+.footer .container .content .important-links ul li:last-of-type{
+    border: none;
+}
+.footer .container .content .important-links ul li a{
+    text-decoration: none;
+    color: #acacac;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.footer .container .content .important-links ul a::before{
+    font-family: "Font Awesome 5 Free";
+    content: "\F101";
+    font-weight: bold;
+    color: var(--main-color);
+    margin-right: 10px;
+
+}
+.footer .container .content .info li {
+    margin-bottom: 30px;
+    color: #acacac;
+    position: relative;
+    padding-left: 35px;
+    line-height: 1.8;
+}
+.footer .container .content .info li::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    color: var(--main-color);
+    font-size: 25px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    
+}
+.footer .container .content .info li.location::before{
+    content: "\f3c5";
+}
+.footer .container .content .info li.time::before{
+    content: "\f017";
+}
+.footer .container .content .info li.phone::before{
+    content: "\f095";
+}
+.footer .container .content .gallery-footer{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.footer .container .content .gallery-footer img{
+    max-width: 80px;
+    border: 3px solid white;
+
+}
+.footer .container .content .gallery{
+    background-color: #191919;
+}
+.footer .finish{
+    text-align: center;
+    border-top: 1px solid #494949;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+
+}
+.footer .finish span{
+    color: red;
+    text-shadow: #191919;
+}
+@media(max-width:590px)
+{
+    .footer .container .content .important-links  li{
+        text-align: center;
+    }
+    .footer .container .content .contact{
+        text-align: center;
+    }
+    .footer .container .content .info li{
+        text-align: center;
+        padding: 0;
+        margin-left: 0;
+        margin-bottom: 55px;
+    }
+    .footer .container .content .info li::before{
+        top: -45px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
