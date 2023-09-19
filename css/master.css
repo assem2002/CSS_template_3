@@ -921,6 +921,7 @@ ul{
     row-gap: 40px;
     column-gap: 40px;
     text-align: center;
+    justify-content:center;
 }
 .services .container .services-all-cards .card{
     background-color: white;
@@ -1296,6 +1297,7 @@ ul{
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
     gap: 40px;
+    justify-content:center;
 }
 .pricing-plans .container .all-boxes .box img{
     width: 80px;
